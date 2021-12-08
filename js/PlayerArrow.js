@@ -1,4 +1,4 @@
-class PlayerArrow {
+rclass PlayerArrow {
   constructor(x, y, width, height) {
     var options = {
       restitution: 0.8,
@@ -10,7 +10,7 @@ class PlayerArrow {
     this.height = height;
     this.body = Bodies.rectangle(x, y, this.width, this.height, options);
     this.image = loadImage("./assets/arrow.png");
-    //write a code for defining an array named trajectory
+    // escribe un código para definir una matriz llamada trayectoria.
    
     
     World.add(world, this.body);
@@ -34,17 +34,16 @@ class PlayerArrow {
 
       if (this.body.velocity.x > 0 && this.body.position.x > 400) {
         var position = [this.body.position.x, this.body.position.y];
-        /****write a correct 
-         code to add the current 
-         position of arrow to 
-        the trajectory array**/
+        /****wescribe un código
+        correcto para agregar la
+        posición actual de la flecha a
+        la matriz de trayectoria**/
       
       }
   
 
-      /****write a correct code to add for loop and to display small dots
-           at all the positions stored in trajectory array
-           *******/
+      /****escriba un código correcto para agregar un loop for y mostrar pequeños puntos
+      en todas las posiciones almacenadas en la matriz trayectoria. **/
      
   
   }
